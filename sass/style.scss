@@ -50,6 +50,21 @@ $font-main: 'Raleway', sans-serif;
     color: white;
     height: 100%;
 }
+.title {
+    text-align: center;
+    margin-top: 35px;
+}
+.title h1 {
+    font-size: 280%;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-bottom: 8px;
+}
+.title p {
+    font-style: italic;
+    color: darkgray;
+    font-weight: 550;
+}
 
 /*Header*/
 .splash {
@@ -136,24 +151,6 @@ $font-main: 'Raleway', sans-serif;
 .services .row {
     padding-bottom: 25px;
 }
-.services .title {
-    text-align: center;
-    margin-top: 35px;
-}
-.services .title h1 {
-    font-size: 280%;
-    font-weight: bold;
-    font-variant: small-caps;
-    margin-bottom: 8px;
-}
-.services .title p {
-    font-style: italic;
-    color: darkgray;
-    font-weight: 550;
-}
-.service {
-
-}
 .service-card {
     align-content: center;
     text-align: center;
@@ -166,4 +163,46 @@ $font-main: 'Raleway', sans-serif;
     border-radius: 50%;
     font-size: 35px;
     padding: 10px;
+}
+
+/*Our Work*/
+.ourwork {
+    font-family: $font-main;
+    background-color: rgb(240, 240, 240);
+    padding-top: 35px;
+    padding-bottom: 75px;
+}
+.ourwork .container {
+    flex-wrap: wrap;
+}
+.ourwork .container .row{
+    align-items: center;
+}
+.work {
+    background-color: white;
+}
+.work-card .image {
+    height: 75%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.work .work-card img {
+    object-fit: cover;
+    max-width: 100%;
+}
+.work-description {
+    height: 25%;
+    text-align: center;
+    align-content: center;
+}
+.work-description h3 {
+    padding: 0px;
+    margin: 5px;
+}
+.work-description p {
+    padding: 0px;
+    margin: 3px;
+    color: darkgray;
+    font-weight: 500;
+    font-style: italic;
 }
