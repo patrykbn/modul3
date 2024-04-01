@@ -1,4 +1,140 @@
 /* VARIABLES*/
+/*media quaries*/
+@media (max-width: 768px) {
+  .splash {
+    height: 80vh;
+    background-image: url("/images/top_background_mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    margin: 0;
+  }
+  .menu-list {
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 8px;
+  }
+  .welcome .button {
+    margin-bottom: 6%;
+  }
+}
+@media (min-width: 768px) {
+  .splash {
+    height: 50vh;
+    background-image: url("/images/top_background_main.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    margin: 0;
+  }
+  .menu-list {
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .menu-list li a {
+    display: block;
+  }
+}
 /*GLOBAL*/
+.body {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  height: 100%;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxhQUFBO0FBSUEsU0FBQSIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+/*Header*/
+.splash {
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  color: white;
+}
+
+.splash a {
+  color: white;
+  text-decoration: none;
+}
+
+.splash .logo a {
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  font-size: 38px;
+  color: orange;
+}
+
+.splash .container {
+  height: 75%;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  justify-content: right;
+}
+
+.menu-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: right;
+  font-variant: small-caps;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 130%;
+}
+
+.menu-list li a {
+  text-align: right;
+}
+
+.welcome h3, h1 {
+  text-align: center;
+}
+
+.welcome {
+  border: solid pink 2px;
+  height: 90%;
+  justify-content: center;
+}
+
+.welcome h3 {
+  padding-top: 15%;
+  font-family: "Raleway", sans-serif;
+  font-size: 160%;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.welcome h1 {
+  margin-top: -6%;
+  font-family: "Raleway", sans-serif;
+  font-size: 350%;
+  font-weight: 600;
+  font-variant: small-caps;
+}
+
+.button {
+  background-color: gold;
+  border-radius: 14px;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-size: 200%;
+  font-weight: 450;
+  font-variant: small-caps;
+}
+
+/*SERVICES*/
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxhQUFBO0FBSUEsZ0JBQUE7QUFDQTtFQUNJO0lBQ0ksWUFBQTtJQUNBLDBEQUFBO0lBQ0Esc0JBQUE7SUFDQSw0QkFBQTtJQUNBLCtCQUFBO0lBQ0EsNEJBQUE7SUFDQSxTQUFBO0VDRk47RURJRTtJQUNJLHNCQUFBO0lBQ0Esb0JBQUE7SUFDQSxtQkFBQTtFQ0ZOO0VESUU7SUFDSSxpQkFBQTtFQ0ZOO0FBQ0Y7QURJQTtFQUNJO0lBQ0ksWUFBQTtJQUNBLHdEQUFBO0lBQ0Esd0JBQUE7SUFDQSw0QkFBQTtJQUNBLCtCQUFBO0lBQ0EsNEJBQUE7SUFDQSxTQUFBO0VDRk47RURJRTtJQUNJLHFCQUFBO0lBQ0EsbUJBQUE7SUFDQSxvQkFBQTtFQ0ZOO0VESUU7SUFDSSxjQUFBO0VDRk47QUFDRjtBRE9BLFNBQUE7QUFDQTtFQUNJLGtDQTlDUTtFQStDUixZQUFBO0VBQ0EsWUFBQTtBQ0xKOztBRFFBLFNBQUE7QUFDQTtFQUNJLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7QUNMSjs7QURPQTtFQUNJLFlBQUE7RUFDQSxxQkFBQTtBQ0pKOztBRE1BO0VBQ0kscUJBQUE7RUFDQSxzQ0FqRVE7RUFrRVIsZUFBQTtFQUNBLGFBQUE7QUNISjs7QURLQTtFQUNJLFdBQUE7QUNGSjs7QURJQTtFQUNJLDhCQUFBO0FDREo7O0FER0E7RUFDSSxhQUFBO0VBQ0Esc0JBQUE7QUNBSjs7QURHQTtFQUNJLGFBQUE7RUFDQSxTQUFBO0VBQ0EsVUFBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSx3QkFBQTtFQUNBLGtDQXRGUTtFQXVGUixpQkFBQTtFQUNBLGVBQUE7QUNBSjs7QURFQTtFQUNJLGlCQUFBO0FDQ0o7O0FEQ0E7RUFDSSxrQkFBQTtBQ0VKOztBREFBO0VBQ0ksc0JBQUE7RUFDQSxXQUFBO0VBQ0EsdUJBQUE7QUNHSjs7QUREQTtFQUNJLGdCQUFBO0VBQ0Esa0NBdkdRO0VBd0dSLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0FDSUo7O0FERkE7RUFDSSxlQUFBO0VBQ0Esa0NBOUdRO0VBK0dSLGVBQUE7RUFDQSxnQkFBQTtFQUNBLHdCQUFBO0FDS0o7O0FESEE7RUFDSSxzQkFBQTtFQUNBLG1CQUFBO0VBQ0EsU0FBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7QUNNSjs7QURKQTtFQUNJLGtDQTNIUTtFQTRIUixlQUFBO0VBQ0EsZ0JBQUE7RUFDQSx3QkFBQTtBQ09KOztBREpBLFdBQUEiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

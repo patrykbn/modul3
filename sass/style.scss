@@ -2,4 +2,131 @@
 $font-logo: 'Dancing Script', cursive;
 $font-main: 'Raleway', sans-serif;
 
+/*media quaries*/
+@media (max-width: 768px) {
+    .splash {
+        height: 80vh;
+        background-image: url('/images/top_background_mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        margin: 0;
+    }
+    .menu-list {
+        flex-direction: column;
+        justify-content: end;
+        padding-bottom: 8px;
+    }
+    .welcome .button {
+        margin-bottom: 6%;
+    }
+}
+@media (min-width: 768px) {
+    .splash {
+        height: 50vh;
+        background-image: url('/images/top_background_main.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        margin: 0;
+    }
+    .menu-list {
+        list-style-type: none;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .menu-list li a {
+        display: block;
+    }
+    
+}
+
+
 /*GLOBAL*/
+.body {
+    font-family: $font-main;
+    color: white;
+    height: 100%;
+}
+
+/*Header*/
+.splash {
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    color: white;
+}
+.splash a {
+    color: white;
+    text-decoration: none;
+}
+.splash .logo a {
+    text-decoration: none;
+    font-family: $font-logo;
+    font-size: 38px;
+    color: orange;
+}
+.splash .container {
+    height: 75%;
+}
+.navbar {
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    justify-content: right;
+}
+
+.menu-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+    font-variant: small-caps;
+    font-family: $font-main;
+    font-weight: bold;
+    font-size: 130%;
+}
+.menu-list li a {
+    text-align: right;
+}
+.welcome h3, h1 {
+    text-align: center;
+}
+.welcome {
+    border: solid pink 2px;
+    height: 90%;
+    justify-content: center;
+}
+.welcome h3 {
+    padding-top: 15%;
+    font-family: $font-main;
+    font-size: 160%;
+    font-weight: 200;
+    font-style: italic;
+}
+.welcome h1 {
+    margin-top: -6%;
+    font-family: $font-main;
+    font-size: 350%;
+    font-weight: 600;
+    font-variant: small-caps;
+}
+.button {
+    background-color: gold;
+    border-radius: 14px;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+.btn {
+    font-family: $font-main;
+    font-size: 200%;
+    font-weight: 450;
+    font-variant: small-caps;
+}
+
+/*SERVICES*/
