@@ -97,12 +97,11 @@ $font-main: 'Raleway', sans-serif;
     text-align: center;
 }
 .welcome {
-    border: solid pink 2px;
     height: 90%;
     justify-content: center;
 }
 .welcome h3 {
-    padding-top: 15%;
+    padding-top: 5%;
     font-family: $font-main;
     font-size: 160%;
     font-weight: 200;
@@ -130,3 +129,41 @@ $font-main: 'Raleway', sans-serif;
 }
 
 /*SERVICES*/
+
+.services {
+    font-family: $font-main;
+}
+.services .row {
+    padding-bottom: 25px;
+}
+.services .title {
+    text-align: center;
+    margin-top: 35px;
+}
+.services .title h1 {
+    font-size: 280%;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-bottom: 8px;
+}
+.services .title p {
+    font-style: italic;
+    color: darkgray;
+    font-weight: 550;
+}
+.service {
+
+}
+.service-card {
+    align-content: center;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.service-card i {
+    color: gold;
+    border: solid gold 2px;
+    border-radius: 50%;
+    font-size: 35px;
+    padding: 10px;
+}
