@@ -21,6 +21,9 @@ $font-main: 'Raleway', sans-serif;
     .welcome .button {
         margin-bottom: 6%;
     }
+    .copyright {
+        justify-content: center;
+    }
 }
 @media (min-width: 768px) {
     .splash {
@@ -40,7 +43,10 @@ $font-main: 'Raleway', sans-serif;
     .menu-list li a {
         display: block;
     }
-    
+    .copyright p {
+        position: absolute;
+        top: 25px;
+    }
 }
 
 
@@ -205,4 +211,34 @@ $font-main: 'Raleway', sans-serif;
     color: darkgray;
     font-weight: 500;
     font-style: italic;
+}
+
+/*FOOTER*/
+footer {
+    font-family: $font-main;
+}
+.visually-hidden {
+    font-size: 0px;
+}
+footer .row {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    position: relative;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 27px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+}
+.copyright {
+    color: darkgray;
+    font-weight: 300;
 }
