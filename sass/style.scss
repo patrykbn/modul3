@@ -13,6 +13,10 @@ $font-main: 'Raleway', sans-serif;
         background-attachment: fixed;
         margin: 0;
     }
+    .splash .logo {
+        justify-content: center;
+        text-align: center;
+    }
     .menu-list {
         flex-direction: column;
         justify-content: end;
@@ -29,7 +33,7 @@ $font-main: 'Raleway', sans-serif;
     .splash {
         height: 50vh;
         background-image: url('/images/top_background_main.jpg');
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
         background-attachment: fixed;
